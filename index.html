@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Martina ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #f4a9c8;
+  --deep-pink: #d879a6;
+  --lavender: #c5b4ed;
+  --ink: #59445e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  background:
+    radial-gradient(ellipse at 10% 10%, #fce1ee 0%, transparent 40%),
+    radial-gradient(ellipse at 90% 30%, #e8e0ff 0%, transparent 42%),
+    linear-gradient(135deg, #fff7fb, #f8f3ff, #fff8fc);
+  overflow-x: hidden;
+}
+
+#particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  bottom: -50px;
+  opacity: 0;
+  animation: floatUp linear infinite;
+  filter: drop-shadow(0 3px 5px #e6a5c455);
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  15% { opacity: .65; }
+  85% { opacity: .65; }
+  100% { transform: translateY(-115vh) rotate(300deg); opacity: 0; }
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  width: min(1100px, 92%);
+  margin: 20px auto;
+  padding: 13px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ffffffb8;
+  border-radius: 50px;
+  background: #ffffff80;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px #9e6a8b10;
+}
+
+.brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  color: var(--deep-pink);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.hero {
+  min-height: 88vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 65px 20px 90px;
+}
+
+.hero-card {
+  max-width: 790px;
+  width: 100%;
+  padding: 65px 25px;
+  border: 1px solid #ffffffc9;
+  border-radius: 35px;
+  background: #ffffff70;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 25px 80px #a77c9b20;
+  animation: appear 1.2s ease both;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(35px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: #b27da5;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(65px, 12vw, 115px);
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 15px 0 5px;
+  background: linear-gradient(120deg, #d77fa9, #9b83c8, #d77fa9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 400;
+  margin: 8px 0 20px;
+}
+
+.hero p {
+  color: #8d778e;
+  line-height: 1.9;
+  max-width: 480px;
+  margin: 0 auto 30px;
+  font-size: 15px;
+}
+
+.heart {
+  color: #df8eae;
+  font-size: 25px;
+  animation: heartbeat 1.8s infinite;
+  display: inline-block;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.25); }
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px 27px;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(110deg, #df91b6, #a994d9);
+  box-shadow: 0 8px 22px #c88bbd45;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 28px #c88bbd60;
+}
+
+section {
+  width: min(900px, 90%);
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-heading span {
+  color: #c08bb3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+.section-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: clamp(30px, 6vw, 42px);
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: #9a8499;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.wish-card {
+  text-align: center;
+  padding: 45px 30px;
+  border-radius: 28px;
+  background: #ffffffa8;
+  border: 1px solid #fff;
+  box-shadow: 0 15px 50px #9c7d9b12;
+}
+
+.wish-card .big-heart {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.wish-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.wish-card p {
+  max-width: 620px;
+  margin: 12px auto;
+  line-height: 2;
+  color: #88758b;
+  font-size: 15px;
+}
+
+.letter-area {
+  text-align: center;
+}
+
+.envelope {
+  width: min(500px, 100%);
+  min-height: 245px;
+  margin: 25px auto;
+  position: relative;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f7d9e9, #e5dafa);
+  box-shadow: 0 18px 45px #a77eaa25;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.envelope.opened {
+  min-height: 120px;
+  opacity: .8;
+}
+
+.seal {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(140deg, #d77fa9, #a58cd4);
+  color: white;
+  font-size: 27px;
+  box-shadow: 0 5px 20px #a77eaa55;
+  margin: auto;
+}
+
+.envelope p {
+  margin-top: 17px;
+  color: #966c98;
+  font-family: 'Playfair Display', serif;
+}
+
+#letter {
+  display: none;
+  max-width: 720px;
+  margin: 35px auto 0;
+  padding: clamp(25px, 6vw, 50px);
+  text-align: left;
+  background: #fffdfd;
+  border: 1px solid #f4e4ee;
+  border-radius: 22px;
+  box-shadow: 0 15px 50px #9b789b18;
+  animation: appear .8s ease both;
+}
+
+#letter h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 45px;
+  color: #c17fa8;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#letter p {
+  font-size: 14px;
+  line-height: 2.05;
+  color: #78677d;
+  margin-bottom: 17px;
+}
+
+.signature {
+  text-align: right;
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px !important;
+  color: #bd80a9 !important;
+}
+
+.final {
+  text-align: center;
+  padding: 90px 20px 110px;
+}
+
+.final h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(55px, 10vw, 85px);
+  font-weight: 400;
+  color: #c17fa8;
+  margin: 10px 0;
+}
+
+.final p {
+  color: #927e96;
+  line-height: 1.9;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #a28da2;
+  font-size: 12px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width:600px) {
+  nav { padding: 12px 16px; }
+  nav a { margin-left: 10px; font-size: 11px; }
+  .hero-card { padding: 55px 20px; }
+  section { padding: 55px 0; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<main>
+
+<nav>
+  <div class="brand">For Martina ♡</div>
+  <div>
+    <a href="#wish">Wish</a>
+    <a href="#letter-section">Letter</a>
+  </div>
+</nav>
+
+<!-- WELCOME SCREEN -->
+
+<header class="hero">
+  <div class="hero-card">
+    <div class="eyebrow">A little surprise, made with care</div>
+
+    <h1>Happy Birthday</h1>
+
+    <h2>Dear Martina ♡</h2>
+
+    <p>
+      Today is all about celebrating you.
+      Here's a little corner of the internet filled with
+      warm wishes, beautiful thoughts and a letter from me.
+    </p>
+
+    <div class="heart">♡</div>
+
+    <br><br>
+
+    <a href="#wish" class="btn">Open Your Surprise ✨</a>
+  </div>
+</header>
+
+<!-- BIRTHDAY WISH -->
+
+<section id="wish" class="reveal">
+
+  <div class="section-heading">
+    <span>Chapter One</span>
+    <h2>A Day Just For You</h2>
+    <p>A few words to make your special day even more special.</p>
+  </div>
+
+  <div class="wish-card">
+
+    <div class="big-heart">🎀</div>
+
+    <h3>Wishing You the Happiest Birthday!</h3>
+
+    <p>
+      May your day be filled with genuine smiles, peaceful moments,
+      unexpected happiness and all the little things that make life beautiful.
+      May the year ahead bring you success, confidence, new adventures
+      and countless reasons to smile.
+    </p>
+
+    <p>
+      Keep believing in yourself, keep chasing your dreams
+      and never forget how much happiness you deserve.
+    </p>
+
+    <div class="heart">♡</div>
+
+  </div>
+</section>
+
+<!-- OUR LITTLE MEMORY -->
+
+<section id="memory" class="reveal">
+
+  <div class="section-heading">
+    <span>Chapter Two</span>
+    <h2>Our Little Memory ♡</h2>
+    <p>Some moments stay special, no matter how much time passes.</p>
+  </div>
+
+  <div class="memory">
+
+    <div class="memory-date">28 AUGUST 2021</div>
+
+    <h3>One Beautiful Memory ✨</h3>
+
+    <p>
+      I still remember 28th August 2021, the day we first met face to face.
+      We were in tuition class, and I remember being a little shy.
+      You were the one who came forward and said hi to me first.
+    </p>
+
+    <p>
+      And then, after tuition, we took a picture together.
+      Maybe it was just an ordinary moment for us back then,
+      but it's one of those little memories that I still remember
+      with a smile.
+    </p>
+
+    <p>
+      It's amazing how a simple hello and one photograph
+      can become a memory that stays with you for years.
+      I'm glad we got to share that moment.
+    </p>
+
+    <div class="tiny-heart">♡</div>
+
+  </div>
+
+</section>
+
+
+<!-- LETTER SECTION -->
+
+<section id="letter-section" class="reveal">
+
+  <div class="section-heading">
+    <span>Chapter Two</span>
+    <h2>A Letter From Me</h2>
+    <p>Some feelings are better expressed through words.</p>
+  </div>
+
+  <div class="letter-area">
+
+    <div class="envelope" id="envelope">
+      <div>
+        <div class="seal">♡</div>
+        <p>A little letter for you</p>
+      </div>
+    </div>
+
+    <button class="btn" id="openLetter">
+      Open Your Letter 💌
+    </button>
+
+    <article id="letter">
+
+      <h3>Dear Martina, ♡</h3>
+
+      <p>
+        First of all, a very, very Happy Birthday to you! ❤️
+      </p>
+
+      <p>
+        I hope today brings you countless reasons to smile, moments that make
+        you genuinely happy, and all the little things you've been wishing for.
+        You deserve happiness, peace, success and so much more.
+      </p>
+
+      <p>
+        I know things have become a little complicated between us recently.
+        Things aren't quite the same as they used to be, and maybe there are
+        some things that neither of us knows how to explain properly.
+        Sometimes life takes unexpected turns, and situations become different
+        from what we once imagined.
+      </p>
+
+      <p>
+        But despite everything, I don't want today's message to be about
+        what went wrong or what has changed. Today is your day, and I want
+        you to know that I genuinely wish the best for you.
+      </p>
+
+      <p>
+        I hope you never lose the beautiful parts of yourself.
+        I hope you continue to chase your dreams, discover new things,
+        laugh without worrying about anything, and find happiness even
+        in the smallest moments.
+      </p>
+
+      <p>
+        There are memories and moments in life that we cannot simply
+        measure by how things are today. Some moments remain special
+        because they once made us genuinely happy. And I will always
+        appreciate the good memories we've shared.
+      </p>
+
+      <p>
+        I also want you to know that you don't have to have everything
+        figured out. It's okay if life feels confusing sometimes.
+        Take your time, grow at your own pace, and never be too hard
+        on yourself. I hope life treats you kindly and gives you
+        many beautiful reasons to smile.
+      </p>
+
+      <p>
+        No matter how much things change with time, I sincerely hope
+        you achieve everything you've ever dreamed of. I hope you meet
+        wonderful people, experience beautiful adventures, and create
+        memories that you'll look back on with the biggest smile.
+      </p>
+
+      <p>
+        Thank you for the conversations, the laughter and the moments
+        that became beautiful memories. I genuinely appreciate them.
+      </p>
+
+      <p>
+        Once again, Happy Birthday, Martina! ❤️
+      </p>
+
+      <p>
+        Please keep smiling, keep believing in yourself, and never
+        forget that you deserve all the happiness this world has to offer.
+      </p>
+
+      <p class="signature">
+        With lots of good wishes,<br>
+        Someone who genuinely wishes the best for you. ♡
+      </p>
+
+    </article>
+
+  </div>
+</section>
+
+<!-- FINAL MESSAGE -->
+
+<section class="final reveal">
+
+  <div style="font-size:35px">🦋 ✨ 🦋</div>
+
+  <h2>Stay Wonderful</h2>
+
+  <p>
+    May this birthday be the beginning of a beautiful new chapter.
+    <br>
+    Wishing you nothing but the best, Martina. ♡
+  </p>
+
+  <div class="heart">♡</div>
+
+</section>
+
+<footer>
+  Made with care, just for Martina ♡
+</footer>
+
+</main>
+
+<script>
+
+// Floating petals, hearts and butterflies
+
+const particleBox = document.getElementById("particles");
+
+const symbols = ["♡", "✧", "🌸", "🦋", "✿"];
+
+for (let i = 0; i < 28; i++) {
+
+  const item = document.createElement("span");
+
+  item.className = "particle";
+
+  item.textContent =
+    symbols[Math.floor(Math.random() * symbols.length)];
+
+  item.style.left = Math.random() * 100 + "%";
+
+  item.style.fontSize =
+    (12 + Math.random() * 16) + "px";
+
+  item.style.animationDuration =
+    (12 + Math.random() * 15) + "s";
+
+  item.style.animationDelay =
+    (Math.random() * 15) + "s";
+
+  particleBox.appendChild(item);
+}
+
+// Scroll reveal animations
+
+const observer = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+
+      entry.target.classList.add("visible");
+
+      observer.unobserve(entry.target);
+
+    }
+
+  });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => {
+  observer.observe(el);
+});
+
+// Letter opening animation
+
+const openButton = document.getElementById("openLetter");
+
+const letter = document.getElementById("letter");
+
+const envelope = document.getElementById("envelope");
+
+openButton.addEventListener("click", () => {
+
+  letter.style.display = "block";
+
+  envelope.classList.add("opened");
+
+  openButton.style.display = "none";
+
+  setTimeout(() => {
+
+    letter.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+  }, 150);
+
+});
+
+</script>
+
+</body>
+</html>

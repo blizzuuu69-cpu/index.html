@@ -1,0 +1,42 @@
+
+.memory {
+  position: relative;
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  text-align: center;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #fff9fc, #f1eaff);
+  border: 1px solid white;
+  box-shadow: 0 15px 45px #a48bb51a;
+}
+
+.memory-date {
+  display: inline-block;
+  padding: 10px 19px;
+  border-radius: 30px;
+  background: #f6e4f0;
+  color: #b276a2;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.memory h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  font-weight: 500;
+  margin: 22px 0 12px;
+}
+
+.memory p {
+  line-height: 2;
+  color: #89778d;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.tiny-heart {
+  font-size: 25px;
+  margin-top: 15px;
+  color: #d88eaf;
+}
